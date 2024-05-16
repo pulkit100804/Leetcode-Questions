@@ -1,0 +1,8 @@
+class Solution:
+    def containsDuplicate(self, nums):
+        seen = set()
+        for num in nums:              #interating numbers instead of i and storing it in a set
+            if num in seen:
+                return True
+            seen.add(num)
+        return False
